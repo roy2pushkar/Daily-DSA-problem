@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/roy20/OneDrive/Desktop/prepinsta100/DailyDSAProblem",
-      "program": "c:/Users/roy20/OneDrive/Desktop/prepinsta100/DailyDSAProblem/build/Debug/outDebug",
+      "cwd": "c:/Users/roy20/OneDrive/Desktop/prepinsta100/DailyDSAProblem/Day1",
+      "program": "c:/Users/roy20/OneDrive/Desktop/prepinsta100/DailyDSAProblem/Day1/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

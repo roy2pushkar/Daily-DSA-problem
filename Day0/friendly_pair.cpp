@@ -1,34 +1,25 @@
-/******************************************************************************
-
-                              Online C++ Compiler.
-               Code, Compile, Run and Debug C++ program online.
-Write your code in this editor and press "Run" button to compile and execute it.
-
-*******************************************************************************/
-
-#include <iostream>
-#include <stdio.h>
-
+#include<iostream>
 using namespace std;
-int getDivisorsSum(int num)
-{
-
-    int sum = 0;
-
-    for (int i = 1; i < num; i++)
-    {
-        if (num % i == 0)
-            sum = sum + i;
+int main(){
+    int sum1 = 0,sum2=0;
+    int n1,n2;
+    cin>>n1>>n2;
+    for(int i = 1;i<=n1;i++){
+        if(n1%i==0){
+            sum1=sum1+i;
+        }
     }
-    return sum;
+    for(int i=1;i<=n2;i++){
+        if(n2%i==0){
+            sum2=sum2+i;
+        }
+    }
+    if(sum1/n1==sum2/n2){
+        cout<<"friendly pair";
+    }
+    else{
+        cout<<"not a friendly pair";
+    }
+    return 0;
 }
 
-int main()
-{
-    int num1 = 6, num2 = 140;
-
-    if (getDivisorsSum(num1) / num1 == getDivisorsSum(num2) / num2)
-        cout << num1 << " & " << num2 << " are friendly pairs";
-    else
-        cout << num1 << " & " << num2 << " are not friendly pairs";
-}

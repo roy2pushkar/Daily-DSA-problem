@@ -1,47 +1,41 @@
 // #include <bits/stdc++.h>
 // using namespace std;
-
-// void findDistinct(int nums[], int n)
+// int findDuplicate(int nums[], int n)
 // {
 
+//     bool found = false;
 //     for (int i = 0; i < n; i++)
 //     {
-//         bool isDistinct = true;
-
-//         // Check if the current element is repeated in the elements ahead of it
-//         for (int j = i; j < n; j++)
+//         // For every element check if it is repeated in the elements ahead of it
+//         for (int j = i + 1; j < n; j++)
 //         {
-
+//             // If repeated, this is the duplicate element
 //             if (nums[i] == nums[j])
 //             {
-//                 isDistinct = false;
-
-//                 break;
+//                   cout << "Repeating element: " << nums[i] << endl;
+//                   found = true;
+//                   break;
 //             }
-//         }
 
-//         // If the element is distinct, print it
-//         if (isDistinct)
-//         {
-//             cout << "Distinct element: " << nums[i] << endl;
 //         }
+//     }
+//      if (!found) {
+//         cout << "No repeating elements found." << endl;
 //     }
 // }
-
 // int main()
 // {
-//     int n;
-//     cout << "Enter the size of the array: ";
-//     cin >> n;
+//     // Example 1
 
+//     int n;
+//     cin >> n;
 //     int nums[n];
-//     cout << "Enter the elements of the array:" << endl;
 //     for (int i = 0; i < n; i++)
 //     {
+
 //         cin >> nums[i];
 //     }
-
-//     findDistinct(nums, n);
+//     cout << findDuplicate(nums, n) << endl;
 
 //     return 0;
 // }
@@ -61,7 +55,7 @@ int main()
         mp[arr[i]]++;
     for (auto it = mp.begin(); it != mp.end(); it++)
     {
-        if (it->second == 1)
+        if (it->second != 1)
             cout << it->first << " ";
     }
 }

@@ -1,39 +1,24 @@
-/******************************************************************************
-
-                              Online C++ Compiler.
-               Code, Compile, Run and Debug C++ program online.
-Write your code in this editor and press "Run" button to compile and execute it.
-
-*******************************************************************************/
-
 #include <iostream>
-
 using namespace std;
-int noOfDivisors(int num)
-{
 
-    int count = 0;
+int main() {
+    int n;
+    cin >> n;
+    int arr[n];
 
-    for (int i = 1; i <= num; i++)
-    {
-        if (num % i == 0)
-            count++;
+    for (int i = 0; i < n; i++) {
+        cin >> arr[i];
     }
+   unordered_map<int,int>mp;
+   for(int i=0;i<n;i++)
+   {
 
-    return count;
-}
+       mp[arr[i]]++;
+   }
+   int cnt_dist = mp.size();
 
-int main()
-{
-    int n = 7, x = 2, cnt = 0;
-    ;
 
-    for (int i = 1; i <= n; i++)
-    {
-        if (noOfDivisors(i) == x)
-        {
-            cnt++;
-        }
-    }
-    cout << "No of Integers :" << cnt;
+    cout << "Total distinct no is " << cnt_dist << endl;
+
+    return 0;
 }

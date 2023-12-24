@@ -12,7 +12,7 @@
 //         for (int j = i; j < n; j++)
 //         {
 
-//             if (nums[i] == nums[j])
+//             if (i != j && nums[i] == nums[j])
 //             {
 //                 isDistinct = false;
 

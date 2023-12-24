@@ -1,6 +1,6 @@
 // #include <bits/stdc++.h>
 // using namespace std;
-// int findDuplicate(int nums[], int n)
+// void findDuplicate(int nums[], int n)
 // {
 
 //     bool found = false;
@@ -36,7 +36,7 @@
 //         cin >> nums[i];
 //     }
 //     cout << findDuplicate(nums, n) << endl;
-
+ // findDuplicate(nums,n);
 //     return 0;
 // }
 #include <bits/stdc++.h>

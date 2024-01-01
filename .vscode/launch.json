@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/roy20/OneDrive/Desktop/prepinsta100/DailyDSAProblem/Day2",
-      "program": "c:/Users/roy20/OneDrive/Desktop/prepinsta100/DailyDSAProblem/Day2/build/Debug/outDebug",
+      "cwd": "c:/Users/roy20/OneDrive/Desktop/prepinsta100/DailyDSAProblem/Recursion",
+      "program": "c:/Users/roy20/OneDrive/Desktop/prepinsta100/DailyDSAProblem/Recursion/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

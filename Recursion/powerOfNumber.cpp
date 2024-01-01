@@ -8,7 +8,7 @@ int powerOfNumber(int base, int n)
     }
     else
     {
-        return base *powerOfNumber(n-1 , base);
+        return base *powerOfNumber(base , n-1);
     }
 }
 int main()

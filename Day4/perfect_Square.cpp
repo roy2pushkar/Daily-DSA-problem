@@ -3,7 +3,7 @@ using namespace std;
 int perfect_square(int n)
 {
 
-    for (int i = 0; i <= n/2; i++)
+    for (int i = 1; i <= n / 2; i++)
     {
         if (i * i == n)
         {
